@@ -1,0 +1,139 @@
+@media(max-width:1024px){
+nav ul li a{
+    font-size: 12px;
+}
+.nav-btn{
+    font-size: 12px;
+    padding: 10px 20px;
+}
+
+.nav-cta a {
+    font-size: 12px;
+}
+.about-grid{
+    grid-template-columns: repeat(2,1fr);
+}
+.pricing-grid{
+    grid-template-columns: repeat(1,1fr);
+}
+.review-box,.detail-content,.contact-container{
+    flex-direction: column;
+}
+.branding{
+    display: none;
+}
+.alert{
+   transform: translateY(450%);
+
+}
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.footer .container input{
+    margin-bottom: 2rem;
+}
+.footer .container p{
+    margin-top: 2rem;
+}
+
+}
+
+@media (max-width:650px){
+  .footer .container,  .grid{
+        grid-template-columns: repeat(1,1fr);
+        gap: 2.75rem;
+    }
+    .hero-cta{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    .hero-cta button{
+        padding: 1rem 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn-2{
+      margin-left: 0 !important;
+    }
+
+    .hero{
+        padding: .75rem !important;
+    }
+    .container{
+        width: 90% !important;
+        padding: 1rem !important;
+        margin: 0 auto !important;
+    }
+
+    .hero .container h1{
+        font-size: 30px;
+        line-height: 70px;
+    }
+    h2{
+        font-size: 32px;
+    }
+
+    img{
+        width: 95%;
+    }
+
+}
+
+@media (max-width:890px){
+    .nav-cta{
+        display: none;
+    }
+    .nav-icons{
+        display: flex;
+    }
+    .nav-icons svg{
+        display: block !important;
+    }
+
+            
+    
+ .navbar .container{
+     position: relative;
+ }
+
+    nav ul{
+        flex-direction: column;
+        position: absolute;
+        top: -1000%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        opacity: 0;
+        background: var(--dark-background-color);
+        z-index: 1000;
+        border: 1px solid;
+        transition: all .3s ease !important;
+        
+    }
+
+    nav ul li{
+        padding: 2rem;
+        text-align: center;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        margin-bottom: 2rem !important;
+        text-align: center;
+    }
+
+    .display{
+        left: 0;
+        top: 80%;
+        opacity: 1;
+}
+
+    .pricing .container{
+        width: 98%;
+    }
+}
